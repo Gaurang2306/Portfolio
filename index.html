@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio - Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" </head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./logos/logo.png" alt="logo" height="50" width="50">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Certificates</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-canvas" id="heroCanvas"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="word">Gaurang Sonavane</span>
+                    <span class="word">Web Developer</span>
+                </h1>
+                <p class="hero-subtitle">Building immersive digital experiences with modern technology</p>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fa-solid fa-arrow-down"></i>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">I'm a passionate developer and designer focused on creating beautiful,
+                        functional digital experiences. My passion lies in the intersection of design and code.</p>
+                    <p>As a fresher, I've worked with startups and established companies to bring
+                        their vision to life. I specialize in frontend development, UI/UX design, and interactive web
+                        experiences using cutting-edge technologies.</p>
+                    <div class="cta-group">
+                        <a href="./files/gaurang_cv.pdf" download>
+                            <button class="btn btn-tertiary"
+                                onclick="document.getElementById('resume').click()">Download
+                                Resume</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="./images/img_1.jpeg" alt="image1" height="800" width="600">
+                            <circle cx="100" cy="80" r="50" fill="currentColor" opacity="0.8" />
+                            <path d="M50 150 Q100 200 150 150" stroke="currentColor" stroke-width="3" fill="none"
+                                opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript & TypeScript</li>
+                        <li>React & Next.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>GSAP & Three.js</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Design</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Git & GitHub</li>
+                        <li>Webpack</li>
+                        <li>Adobe Suite</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Certificates</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="./logos/mirackle_solution.jpeg" alt="mirackle_solution" width="352" height="352">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mirackle Solution</h3>
+                        <p>I completed a 1-month internship as a Web Developer, where I worked on real-world web
+                            projects and strengthened my skills in HTML, CSS, JavaScript, and responsive design. Had a
+                            good experience for the first time. </p>
+                        <div class="project-links">
+                            <a href="./certificates/mirackle_solution.jpeg" class="link-btn">View Certificate</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="./logos/microsoft.png" alt="microsoft_logo" width="352" height="352">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microsoft</h3>
+                        <p>I successfully completed a Prompt Engineering course from the respective company, gaining
+                            practical knowledge in crafting effective prompts and optimizing AI-driven responses for
+                            real-world applications.</p>
+                        <div class="project-links">
+                            <a href="./certificates/microsoft.jpeg" class="link-btn">View Certificate</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="./logos/deloitte.png" alt="Deloitte_logo" width="352" height="150">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Deloitte</h3>
+                        <p> successfully completed a Cybersecurity course from the respective company, where I gained
+                            foundational knowledge of security principles, threat analysis, and best practices for
+                            protecting systems and data.</p>
+                        <div class="project-links">
+                            <a href="./certificates/deloitte.jpeg" class="link-btn">View Certificate</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="./logos/nxt_wave.png" alt="Nxt_Wave_logo" width="352" height="300">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Nxt Wave</h3>
+                        <p>I successfully completed a Generative AI course from the respective company, gaining hands-on
+                            understanding of AI models, content generation, and practical applications of generative
+                            technologies.</p>
+                        <div class="project-links">
+                            <a href="./certificates/nxt_wave.jpeg" class="link-btn">View Certificate</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="./logos/slrtce_logo.jpeg" alt="SLRTCE_logo" width="230" height="200">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SLRTCE (Cybersecurity)</h3>
+                        <p>I successfully completed a 10-day in-house Cybersecurity internship, where I gained practical
+                            exposure to security fundamentals, threat identification, and basic system protection
+                            practices.</p>
+                        <a href="#" class="link-btn">View Certificate</a>
+                    </div>
+            </div>
+            </article>
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <!-- <h3>Senior Frontend Engineer</h3>
+                        <p class="company">Tech Startup Inc. • 2022 - Present</p>
+                        <p>Led development of customer-facing web applications using React and Next.js. Improved
+                            performance by 40% and mentored junior developers.</p> -->
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <!-- <h3>Full Stack Developer</h3>
+                        <p class="company">Digital Agency Co. • 2020 - 2022</p>
+                        <p>responsive websites and web applications for clients. Designed and implemented RESTful
+                            APIs and database schemas.</p> -->
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <p class="company">Mirackle Solutions • 2025 - 2026 (1 month Internship)</p>
+                        <p>Started career building interactive websites with HTML, CSS, and JavaScript. Learned
+                            fundamentals of web development and design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">I'm always interested in hearing about new projects and opportunities.</p>
+
+                <form class="contact-form" action="https://formsubmit.co/gaurangsonavane@gmail.com" method="post">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Contact Form Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Gaurang2306" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.001 12.001 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaurang-sonavane-209a7a371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.667-2.236-1.088 0-1.546.725-1.799 1.424-.092.224-.115.537-.115.85v5.531h-3.554s.048-8.981 0-9.921h3.554v1.404c.43-.666 1.204-1.613 2.931-1.613 2.142 0 3.752 1.4 3.752 4.404v5.726zM5.337 8.855c-1.143 0-1.901-.757-1.901-1.706 0-.955.757-1.708 1.942-1.708 1.184 0 1.901.753 1.924 1.708 0 .949-.74 1.706-1.965 1.706zm-1.566 12.002h3.132V9.021H3.771v11.836zM22.224 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451c.979 0 1.778-.773 1.778-1.729V1.729C24 .774 23.203 0 22.224 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; created by Gaurang Sonavane. All rights reserved.</p>
+                <a href="#home" class="back-to-top">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden Resume Link -->
+    <a id="resume" href="#" style="display: none;"></a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
